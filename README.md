@@ -23,13 +23,12 @@ A Node.js server that provides image content to [nanoGallery](http://nanogallery
 1. [Optional] Create thumbnail images for each album and save the them to the folder named '_thumbnail'(or whatever you wish) in each album folder. If this folder does not exist, the original photo will be selected as the thumbnail image.
 1. Edit the index.js and change the parameters as you wish:
 
-    ```
-    port: the port that web server uses, 80 as default
-    root: the folder name in the server root which contains the photos, *albums* as default. Must be the same as in the nanoGallery settings("itemsBaseURL" in index.html)
-    filter: extension name filter, only those are matched will be presented
-    thumbnailFolder: thumbnail folder name in each album folder, *_thumbnail* as default
-    thumbnailPrefix/Suffix: prefix and suffix of thumnnail filename
-    ```
+    * port: the port that web server uses, 80 as default
+    * root: the folder name in the server root which contains the photos, *albums* as default. Must be the same as in the nanoGallery settings("itemsBaseURL" in index.html)
+    * filter: extension name filter, only those are matched will be presented
+    * thumbnailFolder: thumbnail folder name in each album folder, *_thumbnail* as default
+    * thumbnailPrefix/Suffix: prefix and suffix of thumnnail filename
+
 
 1. Place the index.html in the server root, and replace with your favorite nanoGallery settings.
 1. Run the server via command line:
