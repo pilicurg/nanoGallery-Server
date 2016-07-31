@@ -19,7 +19,7 @@ A Node.js server that provides image content to [nanoGallery](http://nanogallery
 
     on the command line.
 1. Copy the index.js and files of [nanoGallery](http://nanogallery.brisbois.fr) to the server root folder
-1. Create a folder under the server root, and copy your photos into it
+1. Create a folder named *albums* under the server root, and copy your photos into it
 1. [Optional] Create thumbnail images for each album and save the them to the folder named '_thumbnail'(or whatever you wish) in each album folder. If this folder does not exist, the original photo will be selected as the thumbnail image.
 1. Edit the index.js and change the parameters as you wish:
 
@@ -44,5 +44,7 @@ A Node.js server that provides image content to [nanoGallery](http://nanogallery
     ```
 
 #About generating thumbnails
-Thumbnails are not automatically generated as [nanoPhotosProvider](https://github.com/Kris-B/nanoPhotosProvider) does, partly because for home use as a photo storage server, usually the photo are of a massive number and sizes, so dynamically resize photos while displaying them will slow down the server and block the show. Since the photos in an album are rarely changed, and servers at home are usually able to be accessed at a higher permission, one can batch resize the photos after copying them to the storage folder. Thus the server is implemented in a much simpler way, and runs more smoothly.
+Thumbnails are not automatically generated as [nanoPhotosProvider](https://github.com/Kris-B/nanoPhotosProvider) does, partly because for home use as a photo storage server, usually the photos are of a massive number and sizes, so dynamically resize photos while displaying them will slow down the server and block the show.
+
+Since the photos in an album are rarely changed, and servers at home are usually able to be accessed at a higher permission, one can batch resize the photos after copying them to the storage folder. Thus the server is implemented in a much simpler way, and runs more smoothly.
 
