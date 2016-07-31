@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 
 /*  customize */
-var port = 3000;
+var port = 80;
 var root = 'albums';
 var filter = ['.jpg', 'png'];   //extension filter for image files
 var thumbnailFolder = '_thumbnail';
