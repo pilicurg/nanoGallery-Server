@@ -43,8 +43,3 @@ A Node.js server that provides image content to [nanoGallery](http://nanogallery
     http://<server IP>:port
     ```
 
-#About generating thumbnails
-Thumbnails are not automatically generated as [nanoPhotosProvider](https://github.com/Kris-B/nanoPhotosProvider) does, partly because for home use as a photo storage server, usually the photos are of a massive number and sizes, so dynamically resize photos while displaying them will slow down the server and block the show.
-
-Since the photos in an album are rarely changed, and servers at home are usually able to be accessed at a higher permission, one can batch resize the photos after copying them to the storage folder. Thus the server is implemented in a much simpler way, and runs more smoothly.
-
